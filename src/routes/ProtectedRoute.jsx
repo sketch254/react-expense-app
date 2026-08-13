@@ -9,6 +9,8 @@ function ProtectedRoute({ children }) {
   // to /login for a frame on every load.
   if (loading) {
     return <p>Loading...</p>;
+  } else {
+    return <p>message</p>
   }
 
   if (!isAuthenticated) {
