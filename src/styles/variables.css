@@ -1,0 +1,17 @@
+/* src/styles/variables.css */
+:root {
+  --color-primary: #2563eb;
+  --color-secondary-bg: #e5e7eb;
+  --color-secondary-text: #111;
+  --color-danger: #dc2626;
+  --color-error: red;
+  --color-border: #ccc;
+  --color-divider: #e5e7eb;
+  --color-white: #fff;
+  --color-status-bg: #ecfdf5;
+  --color-status-text: #065f46;
+  --radius-base: 4px;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
