@@ -25,12 +25,24 @@ export function AuthProvider({ children }) {
     localStorage.removeItem("user");
   }
 
-  const value = { user, loading, isAuthenticated: !!user, login, logout };
-  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+  const value = { 
+    user, 
+    loading, 
+    isAuthenticated: !!user, 
+    login, 
+    logout 
+  };
+  return <AuthContext.Provider value={value}>
+          {children}
+          </AuthContext.Provider>;
 }
 
+// custom hook
 export function useAuth() {
   const context = useContext(AuthContext);
-  if (!context) throw new Error("useAuth must be used inside AuthProvider");
+
+  if (!context) {
+    throw new Error("useAuth must be used inside AuthProvider");
+  }
   return context;
 }

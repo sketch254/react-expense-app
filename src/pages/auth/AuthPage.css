@@ -1,0 +1,5 @@
+
+.auth-page { display: flex; flex-wrap: wrap; gap: var(--spacing-lg); justify-content: center; align-items: flex-start; max-width: 900px; margin: var(--spacing-lg) auto; padding: 0 var(--spacing-md); }
+.auth-page__panel { flex: 1 1 350px; max-width: 400px; }
+.auth-page__divider { width: 1px; align-self: stretch; background: var(--color-divider); min-height: 300px; }
+.auth-page__status { background: var(--color-status-bg); color: var(--color-status-text); padding: var(--spacing-sm) 0.75rem; border-radius: var(--radius-base); margin-bottom: 0.75rem; }

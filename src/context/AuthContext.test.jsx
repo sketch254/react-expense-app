@@ -43,3 +43,9 @@ test("restores session from localStorage on mount", async () => {
   await waitFor(() => expect(screen.getByText("in:Grace")).toBeInTheDocument());
 });
 
+test("useAuth throws outside AuthProvider", () => {
+  const spy = vi.spyOn(console, "error").mockImplementation(() => {});
+  expect(() => render(<Probe />)).toThrow("useAuth must be used inside AuthProvider");
+  spy.mockRestore();
+});
+

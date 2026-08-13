@@ -1,0 +1,5 @@
+.btn { padding: var(--spacing-sm) var(--spacing-md); border: none; border-radius: var(--radius-base); cursor: pointer; }
+.btn:disabled { cursor: not-allowed; opacity: 0.6; }
+.btn--primary { background: var(--color-primary); color: var(--color-white); }
+.btn--secondary { background: var(--color-secondary-bg); color: var(--color-secondary-text); }
+.btn--danger { background: var(--color-danger); color: var(--color-white); }

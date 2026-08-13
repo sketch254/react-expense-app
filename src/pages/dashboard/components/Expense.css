@@ -1,0 +1,2 @@
+.expense-list { list-style: none; padding: 0; }
+.expense-item { display: flex; justify-content: space-between; margin-bottom: 8px; }

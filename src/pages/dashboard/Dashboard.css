@@ -1,0 +1,2 @@
+.dashboard { max-width: 600px; margin: var(--spacing-lg) auto; }
+.dashboard__header { display: flex; justify-content: space-between; align-items: center; }
