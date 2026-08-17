@@ -22,3 +22,5 @@ test("authenticated visitor sees the dashboard", async () => {
   renderApp("/");
   expect(await screen.findByText("Hello, Ada")).toBeInTheDocument();
 });
+
+test("", ()=>{})
